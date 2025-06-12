@@ -19,14 +19,14 @@ public class TelaCadastroFuncionario extends JPanel {
             gbc.gridy = i;
             add(new JLabel(labels[i]), gbc);
 
-            campos[i] = new JTextField(20); // largura reduzida
+            campos[i] = new JTextField(20); 
             gbc.gridx = 1;
             add(campos[i], gbc);
         }
 
-        // Botão salvar
+     
         JButton salvar = new JButton("Salvar");
-        salvar.setPreferredSize(new Dimension(120, 30)); // botão menor
+        salvar.setPreferredSize(new Dimension(120, 30)); 
         gbc.gridy = labels.length;
         gbc.gridx = 0;
         gbc.gridwidth = 2;

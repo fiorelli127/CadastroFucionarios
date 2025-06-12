@@ -13,7 +13,7 @@ public class TelaPrincipal extends JFrame {
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
 
-        // Painel lateral com botões
+        
         painelLateral = new JPanel();
         painelLateral.setLayout(new BoxLayout(painelLateral, BoxLayout.Y_AXIS));
         painelLateral.setBackground(new Color(50, 50, 50));
@@ -29,13 +29,13 @@ public class TelaPrincipal extends JFrame {
             painelLateral.add(botao);
         }
 
-        // Painel central onde as telas vão aparecer
+        
         painelCentral = new JPanel(new BorderLayout());
 
         add(painelLateral, BorderLayout.WEST);
         add(painelCentral, BorderLayout.CENTER);
 
-        // Tela padrão ao iniciar
+       
         trocarTela("Cadastro");
 
         setVisible(true);
